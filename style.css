@@ -1,0 +1,63 @@
+/* NORMALIZACIÓN */
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box; /* Esto mantiene el ancho y alto a pesar del padding y del border */
+    font-family: inconsolata, monospace;
+    list-style: none; /* Quita las viñetas de las listas */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    color:white;
+}
+
+body{
+    background-color: black; /* TODO: borrar cuando tengamos el fondo final */
+}
+
+header{
+    position: fixed; /* Esto hace que el header se quede fijo en la parte superior */
+    right:0;
+    top:0;
+    z-index: 100; /* Esto hace que el header se muestre por encima */
+    width: 100%;
+    display: flex; /* Esto hará que los elementos se posicionen en linea */
+    align-items: center; /* Esto centra verticalmente */
+    justify-content: space-between; /* Esto hace que el logo se posicione en la izquierda y la barra de navegación a la derecha */
+    padding: 15px 3%;
+    background-color: transparent;
+}
+
+.logo{
+    font-size: 30px;
+    font-weight: 800; /* Esto es el grosor de las letras */
+}
+
+.nav-list{
+    display: flex; /* Esto hace que la lista de la barra de navegación se posicionen en linea */
+}
+
+.nav-list a{
+    margin-left: 60px;
+    font-size: 15px;
+    font-weight: 600; /* Esto es el grosor de la fuente */
+    border-bottom: 2px solid transparent; /* Esto subraya la barra de navegación para futura transicion */
+    transition: all 0.5s ease;
+}
+
+.nav-list a:hover{
+    border-bottom: 2px solid white; /* Esto hace que aparezca un subrayado blanco cuando pongamos el mouse en los elementos de la barra de navegación */
+}
+
+#menu-icon{
+    display: none;/* lo pongo en none para que solo se vea cuando la página esté colapsada de forma horizontal */
+    font-size: 35px;
+    z-index: 101;
+    cursor: pointer; /* El cursor se transforma en una mano cuando pase por encima del icono de menu desplegable */
+}
+
+#menu-toggle{
+    display: none /* Para que nunca se vea el checkbox */
+}
+
+.menu-icon-action{
+    display: none; /* para que no se le pueda hacer click */
+}

@@ -22,12 +22,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
 </head>
-<body>
 
+<body>
     <!-- Esta sección es la cabecera de la página web la cual tendrá logo y barra de navegación -->
     <header>
         <!-- LOGO -->
-        <a href="https://www.linkedin.com/in/ramiro-lopez-enfermero/" class="logo">Ramiro Lopez</a>
+        <a href="https://www.linkedin.com/in/ramiro-lopez-enfermero/" target="_blank" class="logo">Ramiro Lopez</a>
         
         <!-- ICONO MENU DESPLEGABLE -->
         <input type="checkbox" name="checkbox" id="menu-toggle"> <!-- Se utiliza un truco para clickear el icono de menu sin usar JavaScript -->
@@ -44,6 +44,29 @@
         </ul>
     </header>
 
-
+    <!-- Esta sección es la HERO y contendrá información valiosa de mi y una foto -->
+<section class="hero">
+    <div class="hero-text">
+        <h5>Professional Developer</h5>
+        <h4>HTML | CSS</h4>
+        <h1>Ramiro Lopez</h1>
+        <p>Soy estudiante de la carrera Professional Developer.<br>
+        Estoy aprendiendo HTML y CSS y este es mi primer sitio web.</p>
+        <a href="assets/CV Ramiro Lopez.pdf" target="_blank" class="cv"><i class='bx bxs-file-pdf' id="cv-icon"></i>CV</a>
+        <a href="https://www.linkedin.com/in/ramiro-lopez-enfermero/" target="_blank" class="linkedin"><i class='bx bxl-linkedin-square' id="Linkedin"></i>Mi Linkedin</a>
+    </div>
+    <div class="hero-img">
+        <img src="assets/imgs/ramiro-imagen.png" alt="ramiro-imagen">
+    </div>
+    <!-- REDES SOCIALES -->
+    <div class="redes-sociales">
+        <a href="https://www.instagram.com/ramiro.lopez.dev/" target="_blank"><i class="ri-instagram-line"></i></a> <!-- Icono de Instagram -->
+        <a href="https://github.com/RamiroLopezDev" target="_blank"><i class="ri-github-fill"></i></a> <!-- Icono de GitHub -->
+    </div>
+    <!-- BOTON DE SCROLL -->
+    <div>
+        <a href="#" class="scrolldown"><i class="ri-arrow-down-s-fill"></i></a>
+    </div>
+    </section>
 </body>
 </html>

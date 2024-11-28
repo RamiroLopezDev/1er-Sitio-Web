@@ -146,13 +146,13 @@ section{
 }
 
 .hero-img img{
-    width: 350px;
+    width: 300px;
     height: auto;
     transition: all 2s linear;
 }
 
 .hero-img img:hover{
-    width: 400px;
+    width: 350px;
     opacity: 0.6;
 }
 
@@ -192,4 +192,72 @@ section{
 
 .scrolldown i:hover{
 transform: translateY(-5px);
+}
+
+/* Aca abajo daremos estilo para que la web sea responsive */
+/* 1er breakpoint: para tablets */
+@media(max-width:992px){
+    section{
+        padding: 0 3%;
+        transition: .2s;
+    }
+    .redes-sociales{
+        display: none;
+    }
+    .hero-text{
+        padding-top:0;
+    }
+    .hero-img{
+        text-align: center;
+    }
+    .hero-img img{
+        width: 75%;
+        margin: 10% 0 0 10%;  
+    }
+    .hero-text p{
+        font-size: 70%;
+    }
+    .scrolldown{
+        display:none;
+    }
+}
+
+/* 2do breakpoint: para celulares */
+@media(max-width:768px){
+    .menu-icon{
+        display: block;
+    }
+    #menu-icon{
+        display: block;
+    }
+    .hero-text{
+        text-align: center;
+        padding-top: 100px;
+    }
+    .hero{
+        height: 100%;
+        gap:1rem;
+        grid-template-columns: 1fr;
+    }
+    .nav-list{
+        position: absolute;
+        top:100%;
+        right:-100%;
+        width: 200px;
+        height: 180px;
+        background-color: #041822ef;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px 20px;
+        transition: all .5s ease-out;
+    }
+    .nav-list a{
+        margin-left: 0;
+        display: block;
+        margin: 7px 0;
+    }
+    #menu-toggle:checked+label.menu-icon+ul{
+        right:0;
+    }
 }
